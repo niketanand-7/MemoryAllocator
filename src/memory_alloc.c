@@ -79,7 +79,7 @@ The malloc(size) function allocates size bytes to block and return a pointer to 
 void *malloc(size_t size){
     size_t total_size;
     void *block;
-    block = sbrck(size);
+    block = sbrk(size);
     header_t *header;
     if (!size){
         return NULL;
